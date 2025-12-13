@@ -1,0 +1,12 @@
+{
+  "name": "devcore-ui",
+  "version": "1.0.0",
+  "description": "we are trying to create this , as a dev my life is easy upcoming works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
