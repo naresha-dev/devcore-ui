@@ -1,12 +1,26 @@
 {
-  "name": "devcore-ui",
-  "version": "1.0.0",
-  "description": "we are trying to create this , as a dev my life is easy upcoming works",
-  "main": "index.js",
+  "name": "@devcore/ui",
+  "version": "0.1.0",
+  "description": "DevCore reusable UI components",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "sideEffects": ["*.scss"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "sass": "^1.96.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT"
 }
