@@ -1,5 +1,5 @@
 {
-  "name": "@devcore/ui",
+  "name": "@naresha/devcore-ui",
   "version": "0.1.0",
   "description": "DevCore reusable UI components",
   "main": "dist/index.cjs",
