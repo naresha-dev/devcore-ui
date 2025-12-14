@@ -1,0 +1,91 @@
+@import "./variables";
+:root {
+  /* colors */
+  --colors-background: #f9fafb;
+  --colors-surface: #ffffff;
+  --colors-overlay: rgba(0,0,0,0.4);
+
+  --colors-textPrimary: #111827;
+  --colors-textSecondary: #6b7280;
+  --colors-textDisabled: #9ca3af;
+
+  --colors-primary: #2563eb;
+  --colors-primaryHover: #1d4ed8;
+  --colors-primaryActive: #1e40af;
+
+  --colors-secondary: #e5e7eb;
+  --colors-accent: #f59e0b;
+
+  --colors-success: #22c55e;
+  --colors-warning: #facc15;
+  --colors-error: #ef4444;
+  --colors-info: #0ea5e9;
+
+  --colors-border: #e5e7eb;
+  --colors-shadow: rgba(0,0,0,0.1);
+
+  /* typography */
+  --typography-fontFamily: Inter, system-ui, sans-serif;
+  --typography-h1-fontSize: 32px;
+  --typography-h1-fontWeight: 700;
+  --typography-h1-lineHeight: 40px;
+  --typography-h2-fontSize: 24px;
+  --typography-h2-fontWeight: 600;
+  --typography-h2-lineHeight: 32px;
+  --typography-h3-fontSize: 20px;
+  --typography-h3-fontWeight: 600;
+  --typography-h3-lineHeight: 28px;
+  --typography-body-fontSize: 16px;
+  --typography-body-fontWeight: 400;
+  --typography-body-lineHeight: 24px;
+  --typography-button-fontSize: 14px;
+  --typography-button-fontWeight: 500;
+  --typography-button-lineHeight: 20px;
+  --typography-caption-fontSize: 12px;
+  --typography-caption-fontWeight: 400;
+  --typography-caption-lineHeight: 16px;
+
+  /* spacing */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* radius */
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* shadow */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 20px rgba(0,0,0,0.15);
+
+  /* border */
+  --border-width: 1px;
+  --border-style: solid;
+
+  /* z-index */
+  --zIndex-dropdown: 1000;
+  --zIndex-modal: 1300;
+  --zIndex-tooltip: 1500;
+
+  /* motion */
+  --motion-fast: 150ms;
+  --motion-normal: 250ms;
+  --motion-slow: 400ms;
+  --motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* breakpoints */
+  --breakpoints-mobile: 480px;
+  --breakpoints-tablet: 768px;
+  --breakpoints-desktop: 1024px;
+
+  /* components */
+  --components-button-height: 40px;
+}

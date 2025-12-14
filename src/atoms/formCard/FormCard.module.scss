@@ -1,0 +1,13 @@
+.componentCard {
+  padding: var(--spacing-lg);
+  background: var(--colors-surface);
+  border: var(--border-width) var(--border-style) var(--colors-border);
+  border-radius: var(--radius-md);
+  transition: all var(--motion-normal) var(--motion-easing);
+  box-shadow: var(--shadow-xs);
+
+  &:hover {
+    border-color: var(--colors-primary);
+    box-shadow: var(--shadow-md);
+  }
+}

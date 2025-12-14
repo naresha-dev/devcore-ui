@@ -1,0 +1,152 @@
+// Base text styles
+.text {
+  margin: 0;
+  font-family: var(--typography-fontFamily);
+  color: var(--colors-textPrimary);
+}
+
+// Semantic variants - preserves HTML semantics for SEO
+.h1 {
+  font-size: var(--typography-h1-fontSize);
+  font-weight: var(--typography-h1-fontWeight);
+  line-height: var(--typography-h1-lineHeight);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-size: var(--typography-h2-fontSize);
+  font-weight: var(--typography-h2-fontWeight);
+  line-height: var(--typography-h2-lineHeight);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-size: var(--typography-h3-fontSize);
+  font-weight: var(--typography-h3-fontWeight);
+  line-height: var(--typography-h3-lineHeight);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+.p {
+  font-size: var(--typography-body-fontSize);
+  font-weight: var(--typography-body-fontWeight);
+  line-height: var(--typography-body-lineHeight);
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  color: var(--colors-textPrimary);
+}
+
+.small {
+  line-height: 1.4;
+  font-size: var(--typography-caption-fontSize);
+}
+
+.caption {
+  display: block;
+  font-size: var(--typography-caption-fontSize);
+  font-weight: var(--typography-caption-fontWeight);
+  line-height: var(--typography-caption-lineHeight);
+  color: var(--colors-textSecondary);
+}
+
+.code {
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: var(--colors-background);
+  color: var(--colors-textPrimary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+// Sizes
+.size-xs {
+  font-size: 12px;
+}
+
+.size-sm {
+  font-size: 14px;
+}
+
+.size-md {
+  font-size: 16px;
+}
+
+.size-lg {
+  font-size: 18px;
+}
+
+.size-xl {
+  font-size: 20px;
+}
+
+.size-2xl {
+  font-size: 24px;
+}
+
+.size-3xl {
+  font-size: 30px;
+}
+
+.size-4xl {
+  font-size: 36px;
+}
+
+// Weights
+.weight-light {
+  font-weight: 300;
+}
+
+.weight-normal {
+  font-weight: 400;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-semibold {
+  font-weight: 600;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+// Colors
+.color-primary {
+  color: var(--colors-primary);
+}
+
+.color-text {
+  color: var(--colors-textPrimary);
+}
+
+.color-text-light {
+  color: var(--colors-textSecondary);
+}
+
+.color-error {
+  color: var(--colors-error);
+}
+
+.color-success {
+  color: var(--colors-success);
+}
+
+.color-warning {
+  color: var(--colors-warning);
+}

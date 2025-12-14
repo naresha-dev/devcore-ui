@@ -1,14 +1,19 @@
 {
-  "name": "@naresha/devcore-ui",
-  "version": "0.1.0",
+  "name": "@dev-core-ui/components",
+  "version": "0.1.9",
   "description": "DevCore reusable UI components",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "sideEffects": ["*.scss"],
+  "files": [
+    "dist",
+    "theme"
+  ],
+  "sideEffects": [
+    "*.scss"
+  ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && cpy theme dist --parents",
     "dev": "tsup --watch"
   },
   "peerDependencies": {
@@ -18,9 +23,25 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "cpy-cli": "^6.0.0",
+    "esbuild-sass-plugin": "^3.3.1",
     "sass": "^1.96.0",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naresha-dev/devcore-ui"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "design-system",
+    "library"
+  ]
 }
