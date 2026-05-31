@@ -9,9 +9,9 @@ interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
 }
 
 const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
-  ({ children, required, ...props }, ref) => {
+  ({ children, required, className, ...props }, ref) => {
     return (
-      <label ref={ref} className={styles.label} {...props}>
+      <label ref={ref} className={`${styles.label} ${className ?? ""}`.trim()} {...props}>
         {children}
         {required && <span className={styles.required}>*</span>}
       </label>

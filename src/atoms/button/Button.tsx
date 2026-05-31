@@ -17,6 +17,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       size = "md",
       isLoading = false,
       disabled,
+      className,
       ...props
     },
     ref
@@ -24,7 +25,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={`${styles.btn} ${styles[variant]} ${styles[size]}`}
+        className={`${styles.btn} ${styles[variant]} ${styles[size]} ${className ?? ""}`.trim()}
         disabled={disabled || isLoading}
         {...props}
       >

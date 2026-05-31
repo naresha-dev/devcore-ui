@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "build": "tsup && cpy theme dist --parents",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "release": "standard-version"
   },
   "peerDependencies": {
     "react": "^18 || ^19",

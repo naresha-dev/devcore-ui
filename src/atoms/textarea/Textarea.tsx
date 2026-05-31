@@ -11,13 +11,13 @@ interface TextareaProps
 }
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
-  ({ label, error, helperText, ...props }, ref) => {
+  ({ label, error, helperText, className, ...props }, ref) => {
     return (
       <div className={styles.wrapper}>
         {label && <label className={styles.label}>{label}</label>}
         <textarea
           ref={ref}
-          className={`${styles.textarea} ${error ? styles.invalid : ""}`}
+          className={`${styles.textarea} ${error ? styles.invalid : ""} ${className ?? ""}`.trim()}
           {...props}
         />
         {error && <div className={styles.error}>{error}</div>}

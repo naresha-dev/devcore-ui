@@ -8,7 +8,7 @@ interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ label, ...props }, ref) => {
+  ({ label, className, ...props }, ref) => {
     const id = props.id || `checkbox-${Math.random()}`;
 
     return (
@@ -17,7 +17,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           ref={ref}
           type="checkbox"
           id={id}
-          className={styles.checkbox}
+          className={`${styles.checkbox} ${className ?? ""}`.trim()}
           {...props}
         />
         {label && (

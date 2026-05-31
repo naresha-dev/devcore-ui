@@ -8,3 +8,5 @@ export { default as Label } from "./label/Label";
 export { default as Text } from "./text/Text";
 export { default as FormCard } from "./formCard/FormCard";
 export { default as FileUpload } from "./fileUpload/FileUpload";
+export { default as Required } from "./required/Required";
+export { default as Divider } from "./divider/Divider";

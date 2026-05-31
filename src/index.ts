@@ -10,4 +10,6 @@ export {
   Text,
   FormCard,
   FileUpload,
+  Required,
+  Divider,
 } from "./atoms";

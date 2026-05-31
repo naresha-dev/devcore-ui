@@ -10,13 +10,13 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 }
 
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
-  ({ label, error, options, children, ...props }, ref) => {
+  ({ label, error, options, children, className, ...props }, ref) => {
     return (
       <div className={styles.wrapper}>
         {label && <label className={styles.label}>{label}</label>}
         <select
           ref={ref}
-          className={`${styles.select} ${error ? styles.invalid : ""}`}
+          className={`${styles.select} ${error ? styles.invalid : ""} ${className ?? ""}`.trim()}
           {...props}
         >
           {options
