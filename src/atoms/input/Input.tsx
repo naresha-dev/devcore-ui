@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./Input.module.scss";
+import clsx from "clsx"; // 1. Import clsx
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -23,7 +24,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           ref={ref}
           id={name}
           name={name}
-          className={`${styles.input} ${error ? styles.invalid : ""} ${className ?? ""}`.trim()}
+          className={clsx(styles.input, error && styles.invalid, className)}
           {...props}
         />
         {error && <div className={styles.error}>{error}</div>}
@@ -32,7 +33,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         )}
       </div>
     );
-  }
+  },
 );
 
 Input.displayName = "Input";
