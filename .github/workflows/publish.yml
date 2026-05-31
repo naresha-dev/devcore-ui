@@ -1,9 +1,8 @@
-
 name: Publish to NPM
 on:
   push:
     tags:
-      - 'v*' # This makes it only run when you push a version tag
+      - 'v*'
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
@@ -13,7 +12,11 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
+      # Fix: Remove ci (which relies on package-lock) and force a fresh install
+      - name: Clean install dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
       - run: npm run build
       - run: npm publish
         env:
