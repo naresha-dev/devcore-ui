@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.15](https://github.com/naresha-dev/devcore-ui/compare/v0.1.14...v0.1.15) (2026-05-31)
+
+
+### Bug Fixes
+
+* resolve npm optional dependency bug in CI ([bdd3369](https://github.com/naresha-dev/devcore-ui/commit/bdd336943b00abd5afa32bba48f659018d13e5c7))
+
 ### [0.1.14](https://github.com/naresha-dev/devcore-ui/compare/v0.1.13...v0.1.14) (2026-05-31)
 
 
