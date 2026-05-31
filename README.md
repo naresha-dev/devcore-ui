@@ -6,12 +6,11 @@ Reusable React UI components with built-in theming support using CSS Variables.
 We use `standard-version` for automated versioning and changelog generation.
 
 **To release a new version:**
+
 1. **Commit your changes:**
 ```bash
    git add .
    git commit -m "feat: your descriptive message"
-
-
 
 ## Features
 
@@ -346,23 +345,11 @@ All components use CSS variables from the theme. Import the theme once at your a
 - `--motion-slow`
 - `--motion-easing`
 
-## Versioning & Releases
 
-We follow semantic versioning for package releases.
 
-- `patch` for bug fixes: `npm version patch`
-- `minor` for new features: `npm version minor`
-- `major` for breaking changes: `npm version major`
 
-After updating the version, publish and push tags:
 
-```bash
-git add package.json package-lock.json
-git commit -m "chore(release): publish vX.Y.Z"
-git tag vX.Y.Z
-git push origin main --follow-tags
-npm publish --access public
-```
+
 
 Keep the README up to date with examples and make sure `package.json` `files` includes only the published assets (`dist`, `theme`).
 
