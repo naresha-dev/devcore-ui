@@ -88,7 +88,8 @@ Text input with label, error state, helper text, and native input support.
 - `label`: `string`
 - `error`: `string`
 - `helperText`: `string`
-- `className`: `string`
+- `className`: `string` — applies to the input element
+- `wrapperClassName`: `string` — applies to the component wrapper
 - `style`: `CSSProperties`
 - Native `<input>` props such as `type`, `placeholder`, `value`, `onChange`, `disabled`, etc.
 
@@ -110,7 +111,8 @@ Dropdown select component with optional options list or custom children.
 - `label`: `string`
 - `error`: `string`
 - `options`: `{ value: string; label: string }[]`
-- `className`: `string`
+- `className`: `string` — applies to the select element
+- `wrapperClassName`: `string` — applies to the component wrapper
 - `style`: `CSSProperties`
 - Native `<select>` props such as `name`, `value`, `onChange`, etc.
 
@@ -130,7 +132,8 @@ Checkbox with label and native props.
 
 **Props**
 - `label`: `string`
-- `className`: `string`
+- `className`: `string` — applies to the checkbox input
+- `wrapperClassName`: `string` — applies to the component wrapper
 - `style`: `CSSProperties`
 - Native `<input type="checkbox">` props such as `checked`, `onChange`, `disabled`, and `name`.
 
@@ -145,7 +148,8 @@ Multi-line text input with optional rows.
 - `label`: `string`
 - `error`: `string`
 - `helperText`: `string`
-- `className`: `string`
+- `className`: `string` — applies to the textarea element
+- `wrapperClassName`: `string` — applies to the component wrapper
 - `style`: `CSSProperties`
 - Native `<textarea>` props such as `rows`, `name`, `value`, `onChange`, etc.
 
@@ -200,7 +204,8 @@ File input component with size validation.
 - `error`: `string`
 - `accept`: `string`
 - `maxSize`: `number` (MB)
-- `className`: `string`
+- `className`: `string` — applies to the file input
+- `wrapperClassName`: `string` — applies to the component wrapper
 - `style`: `CSSProperties`
 - Native `<input type="file">` props such as `name`, `disabled`, and `onChange`.
 

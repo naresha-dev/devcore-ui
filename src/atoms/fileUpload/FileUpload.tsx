@@ -8,10 +8,11 @@ interface FileUploadProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: string;
   accept?: string;
   maxSize?: number; // in MB
+  wrapperClassName?: string;
 }
 
 const FileUpload = React.forwardRef<HTMLInputElement, FileUploadProps>(
-  ({ label, error, accept = "image/*,.pdf", maxSize = 5, className, onChange, ...props }, ref) => {
+  ({ label, error, accept = "image/*,.pdf", maxSize = 5, className, wrapperClassName, onChange, ...props }, ref) => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const file = e.target.files?.[0];
       if (file && maxSize) {
@@ -26,7 +27,7 @@ const FileUpload = React.forwardRef<HTMLInputElement, FileUploadProps>(
     };
 
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${wrapperClassName ?? ""}`.trim()}>
         {label && <label className={styles.label}>{label}</label>}
         <input
           ref={ref}

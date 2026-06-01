@@ -7,12 +7,13 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   label?: string;
   error?: string;
   options?: Array<{ value: string; label: string }>;
+  wrapperClassName?: string;
 }
 
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
-  ({ label, error, options, children, className, ...props }, ref) => {
+  ({ label, error, options, children, className, wrapperClassName, ...props }, ref) => {
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${wrapperClassName ?? ""}`.trim()}>
         {label && <label className={styles.label}>{label}</label>}
         <select
           ref={ref}

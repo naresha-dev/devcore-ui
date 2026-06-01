@@ -5,14 +5,15 @@ import styles from "./Checkbox.module.scss";
 
 interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
+  wrapperClassName?: string;
 }
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ label, className, ...props }, ref) => {
+  ({ label, className, wrapperClassName, ...props }, ref) => {
     const id = props.id || `checkbox-${Math.random()}`;
 
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${wrapperClassName ?? ""}`.trim()}>
         <input
           ref={ref}
           type="checkbox"

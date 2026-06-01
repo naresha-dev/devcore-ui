@@ -10,7 +10,6 @@
   font-size: var(--typography-h1-fontSize);
   font-weight: var(--typography-h1-fontWeight);
   line-height: var(--typography-h1-lineHeight);
-  margin-bottom: var(--spacing-md);
   letter-spacing: -0.02em;
 }
 
@@ -18,7 +17,6 @@
   font-size: var(--typography-h2-fontSize);
   font-weight: var(--typography-h2-fontWeight);
   line-height: var(--typography-h2-lineHeight);
-  margin-bottom: var(--spacing-md);
   letter-spacing: -0.01em;
 }
 
@@ -26,7 +24,6 @@
   font-size: var(--typography-h3-fontSize);
   font-weight: var(--typography-h3-fontWeight);
   line-height: var(--typography-h3-lineHeight);
-  margin-bottom: var(--spacing-md);
   letter-spacing: -0.01em;
 }
 
@@ -34,20 +31,17 @@
 .h5,
 .h6 {
   line-height: 1.2;
-  margin-bottom: var(--spacing-md);
 }
 
 .p {
   font-size: var(--typography-body-fontSize);
   font-weight: var(--typography-body-fontWeight);
   line-height: var(--typography-body-lineHeight);
-  margin-bottom: var(--spacing-md);
 }
 
 .label {
   display: block;
   font-weight: 500;
-  margin-bottom: var(--spacing-xs);
   color: var(--colors-textPrimary);
 }
 

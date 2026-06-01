@@ -9,17 +9,17 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   error?: string;
   helperText?: string;
+  wrapperClassName?: string;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ label, name, error, helperText, className, ...props }, ref) => {
+  ({ label, name, error, helperText, className, wrapperClassName, ...props }, ref) => {
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${wrapperClassName ?? ""}`.trim()}>
         {label && (
           <label className={styles.label} htmlFor={name}>
             {label}
           </label>
-          
         )}
         <input
           ref={ref}
